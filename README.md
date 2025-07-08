@@ -1,19 +1,43 @@
+# ConcertTickets
 
-# Instrukcja odpalania mojego projektu
-## Michał Połujański, 10956
+## Opis projektu
+ConcertTickets to innowacyjna aplikacja do sprzedaży biletów na koncerty, wykorzystująca technologię blockchain Ethereum. Każdy bilet jest reprezentowany jako niewymienny token (NFT), co zapewnia transparentność i bezpieczeństwo transakcji.
 
+## Funkcjonalności
+- Zakup biletów bezpośrednio od organizatora
+- Odsprzedaż biletów między użytkownikami
+- Zarządzanie sprzedażą przez właściciela kontraktu (start/stop sprzedaży, wypłata środków)
+- Wyświetlanie informacji o koncercie i stanie biletów
 
-## 1. Konfiguracja Backendu 
+## Technologie
+- Solidity (inteligentne kontrakty)
+- React (frontend)
+- Ethers.js (komunikacja z blockchainem)
+- Ganache (lokalny blockchain)
+- MetaMask (portfel Ethereum)
+- Hardhat (środowisko deweloperskie)
 
-1. \`npm install --save-dev hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai ethers\`
-2. Skonfiguruj \`hardhat.config.js\` do Ganache na przyklad (http://127.0.0.1:7545).
-3. \`npx hardhat run scripts/deploy.js --network ganache\`
-4. Skopiuj adres kontraktu i wklej w \`frontend/src/App.jsx\` jako \`CONTRACT_ADDRESS\`.
+## Instrukcja uruchomienia
 
-## Konfiguracja Frontendu
+1. **Uruchom Ganache** i skonfiguruj MetaMask do połączenia z lokalnym blockchainem.
+2. **Wdroż kontrakt** za pomocą Hardhat (`npx hardhat run scripts/deploy.js --network ganache`).
+3. **Skopiuj adres kontraktu** do pliku `App.jsx` (zmienna `CONTRACT_ADDRESS`).
+4. **Przejdź do katalogu frontend** i zainstaluj zależności:
+npm install
 
-1. \`cd frontend\`
-2. \`npm install\`
-3. \`npm run dev\`
-4. Otwórz http://localhost:3000 (lub inny port jeśli coś zmienia użytkownik) i podłącz MetaMask do sieci Ganache.
+text
+5. **Uruchom frontend**:
+npm run dev
 
+text
+6. **Otwórz aplikację** w przeglądarce (np. [http://localhost:3000](http://localhost:3000)).
+
+## Testowanie
+
+Projekt był testowany na lokalnym blockchainie Ganache z kilkoma kontami. Potwierdzono poprawność zakupu i odsprzedaży biletów oraz mechanizmów kontroli dostępu i obsługi błędów (np. próba zakupu większej liczby biletów niż dostępna).
+
+## Autor
+Michał Połujański
+
+## Kontakt
+[michal.polujanski@gmail.com]
