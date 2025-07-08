@@ -1,3 +1,4 @@
+
 # Instrukcja odpalania mojego projektu
 ## Michał Połujański, 10956
 
@@ -15,5 +16,4 @@
 2. \`npm install\`
 3. \`npm run dev\`
 4. Otwórz http://localhost:3000 (lub inny port jeśli coś zmienia użytkownik) i podłącz MetaMask do sieci Ganache.
-
 
