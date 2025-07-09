@@ -1,3 +1,63 @@
+=======================
+# ENGLISH VERSION
+=======================
+
+# ConcertTickets
+
+## Project Description
+
+ConcertTickets is an innovative application for selling concert tickets, utilizing Ethereum blockchain technology. Each ticket is represented as a non-fungible token (NFT), ensuring transparency and security of transactions.
+
+## Features
+
+- Purchase tickets directly from the organizer
+- Resale of tickets between users
+- Sales management by contract owner (start/stop sales, withdraw funds)
+- Display concert information and ticket status
+
+## Technologies
+
+- **Solidity** (smart contracts)
+- **React** (frontend)
+- **Ethers.js** (blockchain communication)
+- **Ganache** (local blockchain)
+- **MetaMask** (Ethereum wallet)
+- **Hardhat** (development environment)
+
+## Installation Instructions
+
+1. **Launch Ganache** and configure MetaMask to connect to the local blockchain.
+2. **Deploy the contract** using Hardhat:
+   ```bash
+   npx hardhat run scripts/deploy.js --network ganache
+   ```
+3. **Copy the contract address** to the `App.jsx` file (variable `CONTRACT_ADDRESS`).
+4. **Navigate to the frontend directory** and install dependencies:
+   ```bash
+   npm install
+   ```
+5. **Run the frontend**:
+   ```bash
+   npm run dev
+   ```
+6. **Open the application** in your browser (e.g., http://localhost:3000).
+
+## Testing
+
+The project was tested on a local Ganache blockchain with multiple accounts. The correctness of ticket purchase and resale, as well as access control mechanisms and error handling (e.g., attempting to purchase more tickets than available) were confirmed.
+
+## Author
+
+Michał Połujański
+
+## Contact
+
+[michal.polujanski@gmail.com]
+
+=======================
+# POLISH VERSION
+=======================
+
 # ConcertTickets
 
 ## Opis projektu
